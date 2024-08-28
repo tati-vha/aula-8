@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+
+        <body>
+            <form action="/login.php" method="get">
+                <fieldset>
+                    <legend>login de usuario</legend>
+
+                    <pre>
+                <label>Usuario</label>
+                <input list="Usuarios" required/>
+
+                <datalist id="Usuarios">
+                    <option value="Marcos"></option>
+                    <option value="Laura"></option>
+                    <option value="Mauro"></option>
+                    <option value="Flavia"></option>
+                    <option value="Maria"></option>
+                </datalist>
+
+                <label>Senha</label>
+                <input type="password" id="senha" name="senha" required />
+
+                <input type="submit" formtarget="blank" value="Fazer login (GET)"/>
+
+                <input type="submit" formmethod="post" formaction="adm/login.php" value="fazer login como adm (post)" />
+            </pre>
+            </fieldset>
+            </form>
+        </body>
+</html>
